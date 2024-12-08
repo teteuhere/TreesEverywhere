@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>YouShop - Mapa de Plantas</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map { height: 400px; }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <nav class="menu">
+      <div class="logo">
+        <img src="caminho/para/sua/logo.png" alt="YouShop Logo"> 
+      </div>
+      <ul>
+        <li>Quem Somos</li>
+        <li>Login</li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Bem-vindo ao YouShop!</h1>
+  <p>Em breve, você poderá comprar e vender árvores aqui.</p>
+
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([-13.00, -38.50], 10); // Coordenadas iniciais do mapa (Salvador)
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Adicionar marcadores para cada planta
+    // (Você precisará buscar os dados do banco de dados e iterar sobre eles)
+    var marker = L.marker([-12.97, -38.50]).addTo(map); // Exemplo de marcador
+    marker.bindPopup("<b>Nome da Planta</b><br>Espécie: ...").openPopup();
+  </script>
+
+  </body>
+</html>

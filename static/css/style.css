@@ -1,0 +1,132 @@
+@import url('globalStyles.css');
+
+/* Estilos da Página inicial  */
+.baixar-edital {
+    color: var(--default-blue);
+}
+.baixar-edital:hover {
+    color: var(--dark-blue);
+}
+
+.box-content {
+    background-color: var(--light-gray);
+    box-shadow: 0px 4px 20px 0px rgba(0, 108, 181, 0.10);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.termo-de-aceite-scroll {
+    height: 15rem; 
+    overflow-y: scroll;
+}
+@media (max-width: 900px) {
+    .termo-de-aceite-scroll {
+        height: 20rem; 
+    }
+}
+
+/* Estilos da Página inicial FIM */
+
+/* Estilos da página formulário de Inscrição INÍCIO */
+.voltar {
+    color: var(--text-dark);
+}
+/* Estilos da página formulário de Inscrição FIM */
+
+/* Estilos da página de Login INÍCIO */
+.login {
+    background-color: var(--default-blue);
+    /* height: calc(100vh - 90px - 72px); */
+    height: 100dvh;
+    background: linear-gradient(180deg, #006CB5 9.07%, #003960 92.84%); 
+}
+
+.box-login {
+    width: 30rem;
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.login-title {
+    color: var(--dark-blue);
+}
+
+.cadastre-se {
+    color: var(--default-blue);
+}
+.cadastre-se:hover {
+    color: var(--dark-blue);
+}
+/* Estilos da página de Login FIM */
+
+/* Estilos da página de Cadastro INÍCIO */
+.cadastro {
+    background-color: var(--default-blue);
+    height: calc(100vh - 90px - 72px);
+}
+
+.box-login {
+    width: 30rem;
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.box-cadastro {
+    width: 30rem;
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    /* margin-bottom: 1.5rem; */
+}
+/* Estilos da página de Cadastro FIM */
+
+/* Estilos da página de Acompanhamento da inscrição - INÍCIO */
+.sucesso {
+    color: var(--success);
+}
+
+.alerta {
+    color: var(--alerta);
+}
+
+.badge {
+    color: var(--text-dark);
+}
+
+/* Estilos da página de Acompanhamento da inscrição - FIM */
+
+/* Estilos da página de dados_do_usuario (admin) - INÍCIO */
+.transfer-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.transfer-list {
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+    min-height: 296px;
+    min-width: 366px;
+    overflow-y: auto;
+}
+.transfer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.transfer-buttons button {
+    width: 50px;
+}
+
+
+.target-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Estilos da página de dados_do_usuario (admin) - FIM */

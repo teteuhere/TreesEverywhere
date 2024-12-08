@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Definindo as cores de forma global */
+:root {
+    --default-blue: #006CB5;
+    --dark-blue: #003960;
+    --secondary-blue: #0B9DFF;
+    --light-blue: #60BFFF;
+    --gray-1: #EAECEE;
+    --light-gray: #FCFCFC;
+    --text-dark: #212529;
+    --alerta: #B5A300;
+    --sucesso: #6CB500;
+    --sucesso-dark: #447402;
+    --erro: #b54900;
+    --erro-dark: #632501;
+    --caption-yellow: #ffef7f;
+    --caption-blue: #68b6ff;
+    --caption-red: #ff9869;
+    --caption-pink: #f588b7;
+    --caption-gray: #b1b1b1;
+    --caption-purple: #aea1ff;
+    --caption-green: #b9ff7d;
+    --caption-brown: #e0a35d;
+
+    
+
+}
+
+body {
+    background-color: var(--gray-1) !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos das fontes INÍCIO*/
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: #003960;
+    font-feature-settings: "liga" off, "clig" off;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.p-regular {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.p-regular-bold {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.p-large {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.p-large-bold {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px; 
+}
+
+.p-small {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.17px;
+}
+
+.p-small-bold {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px; 
+}
+
+/* Estilos das fontes FIM*/
+
+/* Estilos dos botões e checkboxes INÍCIO */
+.btn-primary {
+    background-color: var(--default-blue);
+    border-color: var(--default-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+.btn-primary:disabled {
+    color: var(--light-gray);
+    background-color: var(--default-blue);
+    border-color: var(--default-blue);
+}
+.btn-primary:active,
+.btn-primary:focus {
+    color: var(--light-gray);
+    background-color: var(--default-blue);
+    border-color: var(--default-blue);
+}
+
+.btn-secondary {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+.btn-secondary:hover {
+    background-color: var(--default-blue);
+    border-color: var(--default-blue);
+}
+.btn-secondary:disabled {
+    color: var(--light-gray);
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+.btn-secondary:active,
+.btn-secondary:focus {
+    color: var(--light-gray);
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+.btn-danger {
+    background-color: var(--erro);
+    border-color: var(--erro);
+}
+.btn-danger:hover {
+    background-color: var(--erro-dark);
+    border-color: var(--erro-dark);
+}
+.btn-danger:disabled {
+    color: var(--light-gray);
+    background-color: var(--erro);
+    border-color: var(--erro);
+}
+.btn-danger:active,
+.btn-danger:focus {
+    color: var(--light-gray);
+    background-color: var(--erro);
+    border-color: var(--erro);
+}
+
+
+.btn-success {
+    background-color: var(--sucesso);
+    border-color: var(--sucesso);
+}
+.btn-success:hover {
+    background-color: var(--sucesso-dark);
+    border-color: var(--sucesso-dark);
+}
+.btn-success:disabled {
+    color: var(--light-gray);
+    background-color: var(--sucesso);
+    border-color: var(--sucesso);
+}
+.btn-success:active,
+.btn-success:focus {
+    color: var(--light-gray);
+    background-color: var(--sucesso);
+    border-color: var(--sucesso);
+}
+
+
+.form-check-input:checked {
+    background-color: var(--default-blue);
+    border-color: var(--default-blue);
+}
+
+/* Estilos dos botões e checkboxes FIM */
+.card-box{
+    display: flex;
+    padding: var(--Spacing-Base, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Base, 16px);
+    flex: 1 0 0;
+}
+
+
+.header {
+    background-color: var(--default-blue);
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: var(--CellMaxContentHeight, 10px) 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header2 {
+    background-color: var(--dark-blue);
+    display: flex;
+    width: 100%;
+    height: 220px;
+    padding: 11px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.header2 .img-1 {
+    max-height: 50%; 
+    max-width: 50%; 
+    height: auto; 
+    width: 150px;
+}
+
+.header2 .img-2 {
+    max-height: 50%; 
+    max-width: 50%; 
+    height: 96px; 
+    width: 114px;
+}
+
+.footer {
+    background-color: var(--dark-blue);
+    /* left: 0;
+    right: 0;
+    bottom: 0; */
+    width: 100%;
+    margin-top: auto;
+    /* position: fixed;
+    margin-bottom: auto; */
+    text-align: center;
+}
+
+.form-control::file-selector-button {
+    background-color: var(--light-blue);
+}
+
+.form {
+    background-color: var(--gray-1);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    box-sizing: border-box;
+}
+
+.eventos-list{
+    width: 100%;
+}
+
+.form2 {
+    border-radius: 8px;
+    width: 100%;
+    background: var(--light-gray, #FCFCFC);
+    box-shadow: 0px 4px 20px 0px rgba(0, 108, 181, 0.10);
+    display: flex;
+    padding: var(--CellMaxContentHeight, 24px);
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    margin-bottom: 1rem;
+}
+
+.login {
+    background-color: var(--default-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 32px 64px;
+}
+
+.login2 {
+    display: flex;
+    height: auto;
+    width: 480px;
+    background: var(--light-gray, #FCFCFC);
+    border-radius: 8px;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-Base, 16px);
+    box-shadow: 0px 4px 20px 0px rgba(0, 108, 181, 0.10);
+}
+
+.form-control::file-selector-button:hover {
+    background-color: var(--default-blue);
+    /* Outras propriedades de estilo aqui */
+}
+
+.page-item.active .page-link {
+    background-color: var(--default-blue);
+    border-color: var(--default-blue);
+}
+
+.list-group-item {
+    background-color: var(--light-gray);
+}
+
+.dropdown-item:focus {
+    background-color: var(--default-blue);
+}
