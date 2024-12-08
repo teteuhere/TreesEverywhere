@@ -6,8 +6,13 @@ from apps.accounts.services import UserSerializer, AccountSerializer  # Importe 
 class PlantedTreeSerializer(serializers.ModelSerializer):
     tree = TreeSerializer()  
     user = UserSerializer()  
-    account = AccountSerializer()  
+    account = AccountSerializer()
+    
+    idade = serializers.SerializerMethodField()
 
     class Meta:
         model = PlantedTree
-        fields = '__all__'  # Ou especifique os campos
+        fields = '__all__' 
+        
+    def get_idade(self, obj):
+        return obj.calcular_idade()
