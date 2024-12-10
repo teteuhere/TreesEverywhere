@@ -10,6 +10,7 @@ class User(AbstractUser):
           help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
           verbose_name='groups',
     )
+    account = models.ForeignKey('Account', on_delete=models.CASCADE, blank=True, null=True)
     user_permissions = models.ManyToManyField(
           'auth.Permission',
           related_name='custom_user_set',
